@@ -1,0 +1,232 @@
+"RadioPanel.txt"
+{
+//"SFUI_StandardRadio"
+//"SFUI_GroupRadio"	
+//"SFUI_ReportRadio"	
+	"Groups"
+	{
+		"standard" //"SFUI_StandardRadio"
+		{
+			"hotkey"	"1"
+			"title"	"#SFUI_CommandRadio"
+			"timeout"	"15"
+			
+			"Commands"
+			{
+				"go"
+				{
+					"hotkey"	"1"
+					"label"	"#SFUI_Radio_Go"
+					"cmd"	"go"
+				}
+				"fallback"
+				{
+					"hotkey"	"2"
+					"label"	"#SFUI_Radio_Fall_Back"
+					"cmd"	"fallback"
+				}
+				"sticktog"
+				{
+					"hotkey"	"3"
+					"label"	"#SFUI_Radio_Stick_Together"
+					"cmd"	"sticktog"
+				}
+				"holdpos"
+				{
+					"hotkey"	"4"
+					"label"	"#SFUI_Radio_Hold_Pos"
+					"cmd"	"holdpos"
+				}
+				"followme"
+				{
+					"hotkey"	"5"
+					"label"	"#SFUI_Radio_Follow"
+					"cmd"	"followme"
+				}
+				"spacer"
+				{
+						"hotkey"        "6"
+						"label" "----------------------"
+						"cmd"   "echo"
+				}
+				"fixdotcrosshair"
+				{
+					"hotkey"   "7"
+					"label" "[Fixed]Dot-Style CrossHair" 
+					"cmd"  "cl_crosshairdot 1; cl_crosshairgap 0; cl_crosshairsize 0; cl_crosshairstyle 4; cl_crosshairusealpha 1; cl_crosshairthickness 2; cl_crosshair_drawoutline 0"	
+				}
+				"fixcrosscrosshair"
+				{
+					"hotkey"   "8"
+					"label" "[Fixed]Cross-Style CrossHair" 
+					"cmd"  "cl_crosshairdot 1; cl_crosshairgap -5; cl_crosshairsize 5; cl_crosshairstyle 4; cl_crosshairusealpha 1; cl_crosshairthickness 0;"	
+				}
+				// "fixcircle"
+				// {
+					// "hotkey"   "8"
+					// "label" "[Fixed]Circle-Style CrossHair"
+					// "cmd"  "cl_crosshairdot 0; cl_crosshairgap -3; cl_crosshairsize 1; cl_crosshairstyle 4; cl_crosshairusealpha 1; cl_crosshairthickness 5; cl_fixedcrosshairgap -4; cl_crosshair_outline 0;"	
+				// }
+				"dyncrosscrosshair"
+				{
+					"hotkey"   "9"
+					"label" "[Dynamic]Cross-Style CrossHair"
+					"cmd"  "cl_crosshairdot 1; cl_crosshairgap -5; cl_crosshairsize 5; cl_crosshairstyle 2; cl_crosshairusealpha 1; cl_crosshairthickness 0;"	
+				}
+				// "dyncircle"
+				// {
+					// "hotkey"   "11"
+					// "label" "[Dynamic]Circle-Style CrossHair"
+					// "cmd"  "cl_crosshairdot 0; cl_crosshairgap -4; cl_crosshairsize 1; cl_crosshairstyle 2; cl_crosshairusealpha 1; cl_crosshairthickness 5; cl_fixedcrosshairgap 1; cl_crosshair_outline 0;"	
+				// }
+				// "Red Crosshair"
+				// {
+					// "hotkey"        "10"
+					// "label" "Red Crosshair"
+					// "cmd"   "cl_crosshaircolor_b 0; cl_crosshaircolor_g 0; cl_crosshaircolor_r 250"
+				// }
+				 
+				// "Light Blue Crosshair"
+				// {
+					// "hotkey"        "11"
+					// "label" "Light Blue Crosshair"
+					// "cmd"   "cl_crosshaircolor_b 250; cl_crosshaircolor_g 250; cl_crosshaircolor_r 0"
+				// }
+				// "White Crosshair"
+				// {
+					// "hotkey"        "12"
+					// "label" "White Crosshair"
+					// "cmd"   "cl_crosshaircolor_b 250; cl_crosshaircolor_g 250; cl_crosshaircolor_r 250"
+				// }
+			}
+		}
+		"group" //"SFUI_GroupRadio"	
+		{
+			"hotkey"	"2"
+			"title"	"#SFUI_StandardRadio"
+			"timeout"	"5"
+			
+			"Commands"
+			{
+				"roger"
+				{
+					"hotkey"	"1"
+					"label"	"#SFUI_Radio_Roger"
+					"cmd"	"roger"
+				}
+				"negative"
+				{
+					"hotkey"	"2"
+					"label"	"#SFUI_Radio_Negative"
+					"cmd"	"negative"
+				}
+				"cheer"
+				{
+					"hotkey"	"3"
+					"label"	"#SFUI_Radio_Cheer"
+					"cmd"	"cheer"
+				}
+				"compliment"
+				{
+					"hotkey"	"4"
+					"label"	"#SFUI_Radio_Compliment"
+					"cmd"	"compliment"
+				}
+				"thanks"
+				{
+					"hotkey"	"5"
+					"label"	"#SFUI_Radio_Thanks"
+					"cmd"	"thanks"
+				}
+				"needweapon"
+				{
+					"hotkey"        "6"
+					"label"         "Need weapon"
+					"cmd"           "say_team I need a weapon"
+				}
+				"spacer"
+				{
+					"hotkey"        "7"
+					"label" "----------------------"
+					"cmd"   "echo"
+				}
+				"128tick Netsettings"
+				{
+					"hotkey"        "8"
+					"label" "128tick Netsettings"
+					"cmd"   "rate 80000; cl_cmdrate 128; cl_updaterate 128; cl_interp 0; cl_interp_ratio 1"
+				}
+				"64tick Netsettings"
+				{
+					"hotkey"        "9"
+					"label" "64tick Netsettings"
+					"cmd"   "rate 80000; cl_cmdrate 64; cl_updaterate 64; cl_interp 0; cl_interp_ratio 1"
+				}
+			}
+		}
+		"report" //"SFUI_ReportRadio"
+		{
+			"hotkey"	"3"
+			"title"	"#SFUI_ReportRadio"
+			"timeout"	"5"
+			
+			"Commands"
+			{
+				"enemyspot"
+				{
+					"hotkey"	"1"
+					"label"	"#SFUI_Radio_Spotted"
+					"cmd"	"enemyspot"
+				}
+				"needbackup"
+				{
+					"hotkey"	"2"
+					"label"	"#SFUI_Radio_Need_Backup"
+					"cmd"	"needbackup"
+				}
+				"takepoint"
+				{
+					"hotkey"	"3"
+					"label"	"#SFUI_Radio_Take_Point"
+					"cmd"	"takepoint"
+				}
+				"sectorclear"
+				{
+					"hotkey"	"4"
+					"label"	"#SFUI_Radio_Sector_Clear"
+					"cmd"	"sectorclear"
+				}
+				"inposition"
+				{
+					"hotkey"	"5"
+					"label"	"#SFUI_Radio_In_Position"
+					"cmd"	"inposition"
+				}
+				"getout"
+				{
+					"hotkey"        "6"
+					"label"         "#SFUI_Radio_Shes_Gonna_Blow"
+					"cmd"           "getout"
+				}
+				"spacer"
+				{
+					"hotkey"        "7"
+					"label" "----------------------"
+					"cmd"   "echo"
+				}
+				"Netgraph ON"
+				{
+					"hotkey"        "8"
+					"label" "Netgraph ON"
+					"cmd"   "net_graph 1"
+				}
+				"Netgraph OFF"
+				{
+					"hotkey"        "9"
+					"label" "Netgraph OFF"
+					"cmd"   "net_graph 0"
+				}		
+			}
+		}
+	}
+}
